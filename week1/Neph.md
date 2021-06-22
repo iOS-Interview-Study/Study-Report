@@ -6,7 +6,7 @@ Delegate와 Notification 방식은 결과는 같지만 그 과정이 조금 다�
 
 
 
-## 공통점
+### 공통점
 
 Delegate, Notification 모두 어떤 이벤트를 다른 화면에 전달할 수 있다는 기능을 가진다. Delegate 패턴은 다른 객체의 인스턴스를 내부적으로 보유하여 그 인스턴스를 활용하는 방식으로 운용되며, Notification은 어떤 객체를 Observing하여 그 객체의 변화에 따라 Observer들이 이벤트를 받아 처리할 수 있는 방식으로 운용된다.
 
@@ -18,7 +18,7 @@ Notification의 경우에는 어떤 값의 변화에 따라 어떤 이벤트 (�
 
 
 
-## 차이점
+### 차이점
 
 가장 큰 차이점은 Notification과 다르게 Delegate의 경우에는 수신자가 발신자의 정보를 알고 있어야한다는 것이다.
 
@@ -27,3 +27,12 @@ SomeDelegate에서 SomeDelegate을 가진 객체는 SomeDelegate protocol의 메
 즉, SomeDelegate protocol을 제작할 때 메서드의 틀을 미리 잡아놓아야하며 SomeDelegate이라는 변수를 이벤트 처리 담당 객체가 들고 있어야 한다. 하지만 Notification의 경우에는 이 과정이 무의미하다. 단순히 어떤 값의 변화를 포착하여 그에 맞는 이벤트를 발생시켜주면 된다. 
 
 장점으로도 보이는 이 특징은 양날의 검과 같다. Delegate을 사용하여 설계하지 않고 Notification만 가지고 설계를 했다면 다른 사람이 코드를 유지보수할 때 이 Notification을 누가 Subscribe하고 있는지 알기가 어렵다. 반면 Delegate으로 설계를 했다면 해당 Delegate의 이름, 프로토콜의 메서드 등을 통해 어떤 과정에 의해 이벤트 처리 로직이 돌아가는지 파악하기 한결 수월하다.
+
+
+# Hugging vs Resistance
+
+hugging은 말 그대로 안고있으려는 힘이다. 조금 덧붙이자면 더이상 늘어나지 않으려는 힘을 hugging이라고 한다. stackView의 distrbution 속성이 fill일 경우 내부의 요소들은 stackView 안에서 멋대로 늘어난다. 이 때 hugging priority가 높다면 늘어나지 않고 intrinsic size를 유지하려하고, 낮다면 늘어난다.
+
+
+
+resistance는 눌리지 않으려는 힘이다. 화면에 담을 수 없는 크기의 요소들을 우겨넣으면 어떤 요소는 필연적으로 줄어들거나 가려져야한다. 이 때 resistance priority가 낮은 요소부터 줄어들거나 가려지기 시작한다.
