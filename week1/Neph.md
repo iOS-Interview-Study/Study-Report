@@ -31,7 +31,7 @@ SomeDelegate에서 SomeDelegate을 가진 객체는 SomeDelegate protocol의 메
 
 # Hugging vs Resistance
 
-hugging은 말 그대로 안고있으려는 힘이다. 조금 덧붙이자면 더이상 늘어나지 않으려는 힘을 hugging이라고 한다. stackView의 distrbution 속성이 fill일 경우 내부의 요소들은 stackView 안에서 멋대로 늘어난다. 이 때 hugging priority가 높다면 늘어나지 않고 intrinsic size를 유지하려하고, 낮다면 늘어난다.
+hugging은 말 그대로 안고있으려는 힘이다. 조금 덧붙이자면 더이상 늘어나지 않으려는 힘을 hugging이라고 한다. stackView의 distribution 속성이 fill일 경우 내부의 요소들은 stackView 안에서 멋대로 늘어난다. 이 때 hugging priority가 높다면 늘어나지 않고 intrinsic size를 유지하려하고, 낮다면 늘어난다.
 
 
 
