@@ -9,8 +9,8 @@ App이 실행중이지만, 이벤트를 받지 않는 상태이며, 다른 상�
 - multitasking window로 진입 시(iOS 13 이상)
 ```
 
-![ex_screenshot](././image/In-Active.png)
-
+![In-Active](././image/In-Active.png)
+ 
 
 ##### Respond to Scene-Based Life-Cycle Events
 
