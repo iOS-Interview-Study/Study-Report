@@ -66,3 +66,25 @@ Retain Count를 통해 "필요한 동안 반드시" 값이 살아있음을 보�
 Retain Cycle을 발생시키는 경우에 대해서 더 자세히 알고싶다면 [이 레포지토리](https://github.com/godrm/RetainCycleApp)를 참고해보면 좋을 것 같다.
 
 
+# inActive 상태란?
+
+앱의 생명주기는 크게 아래와 같이 나뉜다.
+
+1. not running
+2. foreground
+   1. inActive
+   2. active
+3. background
+4. Suspended
+
+
+
+not running은 말 그대로 앱이 실행중이지 않은 상태이며
+
+앱 실행시 foreground 상태로 진입한다 (background 상태에서도 진입 가능)
+
+이 때 active 상태로 가기 전 inActive상태를 거치게 된다.
+
+Suspended 상태는 메모리의 공간확보 문제로 iOS가 임의로 메모리에서 해제시키는 상태를 말한다.
+
+이 때 앱은 not running 상태로 돌아간다. 
