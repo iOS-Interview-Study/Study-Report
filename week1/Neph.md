@@ -37,7 +37,7 @@ hugging은 말 그대로 안고있으려는 힘이다. 조금 덧붙이자면 �
 
 resistance는 눌리지 않으려는 힘이다. 화면에 담을 수 없는 크기의 요소들을 우겨넣으면 어떤 요소는 필연적으로 줄어들거나 가려져야한다. 이 때 resistance priority가 낮은 요소부터 줄어들거나 가려지기 시작한다.
 
-# AR
+# ARC
 
 Automatic Retain Count의 약자인 ARC는 자동으로 참조카운트를 계산해주는 swift의 기능을 뜻한다.
 
