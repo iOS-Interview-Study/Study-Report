@@ -21,8 +21,8 @@
 
 | 주차 | 질문                                                    | 발표자 |
 |------|-----------------------------------------------------------|--------|
-| 1    | 앱이 In-Active 상태가 되는 시나리오를 설명하시오.         |        |
-| 1    | UINavigationController 의 역할이 무엇인지 설명하시오.     |        |
-| 1    | Delegates와 Notification 방식의 차이점에 대해 설명하시오. |        |
-| 1    | ARC란 무엇인지 설명하시오.                                |        |
-| 1    | hugging, resistance에 대해서 설명하시오.                  |        |
+| 1    | 앱이 In-Active 상태가 되는 시나리오를 설명하시오.         |    라이언    |
+| 1    | UINavigationController 의 역할이 무엇인지 설명하시오.     |  제임스    |
+| 1    | Delegates와 Notification 방식의 차이점에 대해 설명하시오. |   코지   |
+| 1    | ARC란 무엇인지 설명하시오.                                |  페즈   |
+| 1    | hugging, resistance에 대해서 설명하시오.                  |  네프  |
