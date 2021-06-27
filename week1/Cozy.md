@@ -9,7 +9,7 @@ App이 실행중이지만, 이벤트를 받지 않는 상태이며, 다른 상�
 - multitasking window로 진입 시(iOS 13 이상)
 ```
 
-<img src="/Users/lumi/Library/Application Support/typora-user-images/스크린샷 2021-06-27 오후 4.44.08.png" alt="스크린샷 2021-06-27 오후 4.44.08" style="zoom:50%;" />
+<img src="/Users/lumi/Desktop/InterviewStudy_iOS/image/In-Active.png" alt="In-Active" style="zoom:50%;" />
 
 
 
