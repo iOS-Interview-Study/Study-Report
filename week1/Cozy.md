@@ -41,7 +41,8 @@ iOS 12까지는 하나의 앱에 하나의 window(창)인 `UIApplicationDelegate
 
 ##### iOS 13부터 AppDelegate가 하는 일 
 
-<img src="/Users/lumi/Library/Application Support/typora-user-images/스크린샷 2021-06-27 오후 5.31.18.png" alt="스크린샷 2021-06-27 오후 5.31.18" style="zoom:50%;" />
+<img width="757" alt="ios13Appdelegate" src="https://user-images.githubusercontent.com/29880961/123540977-c4a50e00-d77c-11eb-9e8e-f32a46fd90f3.png">
+
 
 
 
@@ -128,7 +129,7 @@ stack의 vc를 push/pop하여 순차적으로 꺼내올 수도 있고, 뒤로가
 
 ##### 5. hugging, resistance에 대해서 설명하시오.
 
-<img src="/Users/lumi/Library/Application Support/typora-user-images/스크린샷 2021-06-27 오후 6.09.33.png" alt="스크린샷 2021-06-27 오후 6.09.33" style="zoom:50%;" />
+<img width="385" alt="hugging, resistance" src="https://user-images.githubusercontent.com/29880961/123541011-059d2280-d77d-11eb-9776-5e5c06df190f.png">
 
 **content hugging**
 
