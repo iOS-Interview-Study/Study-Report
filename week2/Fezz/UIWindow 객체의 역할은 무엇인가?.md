@@ -2,9 +2,9 @@
 
 ## UIWindow 객체의 역할은 무엇인가?
 
-<img src="/Users/yjaewoongnaver.com/Desktop/스크린샷 2021-07-04 오전 1.10.08.png" alt="스크린샷 2021-07-04 오전 1.10.08" style="zoom:50%;" /> 
+<img width="856" alt="스크린샷 2021-07-04 오전 1 10 08" src="https://user-images.githubusercontent.com/44525561/124361029-cc2a5280-dc67-11eb-8004-d29d3b4aa6ac.png">
 
-<img src="https://raw.githubusercontent.com/Fezravien/UploadForMarkdown/forUpload/img/c05af6a2-c616-482b-8f65-98013d40bb05.png" alt="window" style="zoom:55%;" /> 
+<img src="https://raw.githubusercontent.com/Fezravien/UploadForMarkdown/forUpload/img/c05af6a2-c616-482b-8f65-98013d40bb05.png" alt="window" width="30%" /> 
 
 <br> 
 
@@ -14,7 +14,7 @@ Window는 뷰 컨트롤러와 함께 이벤트를 처리하고 앱 작동에 필
 
 Window는 시각적 모양은 없고 Root View Controller에서 관리하는 하나 이상의 뷰를 보여주는 역할을 합니다.
 
-<img src="https://raw.githubusercontent.com/Fezravien/UploadForMarkdown/forUpload/img/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-07-04%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.16.18.png" alt="스크린샷 2021-07-04 오전 1.16.18" style="zoom:60%;" /> 
+<img src="https://raw.githubusercontent.com/Fezravien/UploadForMarkdown/forUpload/img/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-07-04%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.16.18.png" alt="스크린샷 2021-07-04 오전 1.16.18" width="30%" /> 
 
 > **UIWindow는 UIView의 하위클래스이다.** 
 
