@@ -4,7 +4,7 @@
 
 
 
-여러 개의 `TableView` 의 변수명을 구변될 수 있게 코드 또는 스토리보드를 활용하여 작성 합니다:
+여러 개의 `TableView` 의 변수를 구별될 수 있게 코드 또는 스토리보드를 활용하여 작성 합니다:
 
 예: `toDoTableView`, `doingTableView`, `doneTableView`
 
