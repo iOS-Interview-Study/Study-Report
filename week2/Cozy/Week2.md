@@ -51,7 +51,8 @@ func register(AnyClass?, forCellReuseIdentifier: String)
 
 ###### 3. UIWindow 객체의 역할은 무엇인가?
 
-![스크린샷 2021-07-04 오후 2.11.19](/Users/jieunkim/Library/Application Support/typora-user-images/스크린샷 2021-07-04 오후 2.11.19.png)
+<img width="535" alt="UIWindow" src="https://user-images.githubusercontent.com/29880961/124383740-0bf54680-dd09-11eb-966c-d1d4fb69d8e4.png">
+
 
 - 앱의 시각적 콘텐츠를 담는 역할
 - 뷰들과 다른 앱 객체들에게 터치 이벤트를 전달하는 역할
