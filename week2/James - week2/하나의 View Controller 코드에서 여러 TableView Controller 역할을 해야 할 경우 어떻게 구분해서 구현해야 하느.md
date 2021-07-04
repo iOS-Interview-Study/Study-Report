@@ -19,8 +19,8 @@
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
   
-  switch tableView:
-  	case todoTableView:
+  switch tableView: {
+    case todoTableView:
   		// todoTableView 셀 구현
   
   	case doingTableView:
@@ -28,6 +28,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
   
   	case doneTableView:
   		// doneTableView 셀 구현
+  }
 }
 ```
 
