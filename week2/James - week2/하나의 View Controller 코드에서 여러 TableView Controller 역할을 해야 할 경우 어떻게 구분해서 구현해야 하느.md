@@ -4,7 +4,7 @@
 
 
 
-여러 개의 `TableView` 의 변수명을 구변될 수 있게 코드 또는 스토리보드를 활용하여 작성 합니다:
+여러 개의 `TableView` 의 변수를 구별될 수 있게 코드 또는 스토리보드를 활용하여 작성 합니다:
 
 예: `toDoTableView`, `doingTableView`, `doneTableView`
 
@@ -19,8 +19,8 @@
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
   
-  switch tableView:
-  	case todoTableView:
+  switch tableView: {
+    case todoTableView:
   		// todoTableView 셀 구현
   
   	case doingTableView:
@@ -28,6 +28,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
   
   	case doneTableView:
   		// doneTableView 셀 구현
+  }
 }
 ```
 
