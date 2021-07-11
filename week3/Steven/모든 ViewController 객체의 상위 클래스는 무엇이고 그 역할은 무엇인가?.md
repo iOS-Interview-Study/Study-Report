@@ -27,3 +27,13 @@
 - 위 3개의 뷰는 다른 뷰들과 다름. `canBecomeFirstResponder` 메소드가 true를 리턴하게 오버라이드 되있음.
 - 이유는 모두 키보드를 사용해야 하기 때문임 → 뷰들을 클릭하면 키보드가 뜸
 - 만약 ViewController가 뜨자마자 키보드를 바로 띄우고 싶으면 해당 뷰에 `becomeFirstResponder` 를 호출 하면 됨.
+
+### 참고자료
+
+[https://developer.apple.com/documentation/uikit/uiresponder](https://developer.apple.com/documentation/uikit/uiresponder)
+
+[https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events)
+
+[https://jcsoohwancho.github.io/2019-07-25-Responder와-Responder-Chain,-그리고-First-Responder/](https://jcsoohwancho.github.io/2019-07-25-Responder%EC%99%80-Responder-Chain,-%EA%B7%B8%EB%A6%AC%EA%B3%A0-First-Responder/)
+
+[https://zeddios.tistory.com/538](https://zeddios.tistory.com/538)
