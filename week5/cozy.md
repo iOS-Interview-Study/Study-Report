@@ -1,4 +1,4 @@
-1. UIKit 클래스들을 다룰 때 꼭 처리해야하는 애플리케이션 쓰레드 이름은 무엇인가?
+1. #### UIKit 클래스들을 다룰 때 꼭 처리해야하는 애플리케이션 쓰레드 이름은 무엇인가?
 
    : Main Thread 또는 Main Dispatch Queue
 
@@ -6,7 +6,7 @@
 
    
 
-    **Non-Atomic, Thread-Safe 하지 않은 UIKit**
+   **Non-Atomic, Thread-Safe 하지 않은 UIKit**
 
    UIKIT은 자체적으로 큰 framework 이기 때문에, 성능적인 이슈를 고려하여 다른 프로세스나 쓰레드에 의해 interrupt가 되어지는 Non-Atomic하고, Thread-Safe 하지 않다는 특징을 갖고 있다. 이러한 특징으로,  serial한 처리를 위해 Main Thread에서 synchronously 한 동작을 하게 되었다. 
 
@@ -37,7 +37,9 @@
 
    
 
-2. 앱이 시작할 때 main.c 에 있는 UIApplicationMain 함수에 의해서 생성되는 객체는 무엇인가?
+2. #### 앱이 시작할 때 main.c 에 있는 UIApplicationMain 함수에 의해서 생성되는 객체는 무엇인가?
+
+   
 
 ```swift
 public func UIApplicationMain(_ argc: Int32,_ argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>>!,_ principalClassName: String?,_ delegateClassName: String?) -> Int32
@@ -53,7 +55,9 @@ UIApplicationMain 함수에서는 앱의 주요 객체 생성, UI 로딩, 앱의
 
 
 
-3. App thinning에 대해서 설명하시오.
+3. #### App thinning에 대해서 설명하시오.
+
+   
 
    ** App Thinning**
 
@@ -73,7 +77,9 @@ UIApplicationMain 함수에서는 앱의 주요 객체 생성, UI 로딩, 앱의
 
    
 
-4. 멀티 쓰레드로 동작하는 앱을 작성하고 싶을 때 고려할 수 있는 방식들을 설명하시오.
+4. #### 멀티 쓰레드로 동작하는 앱을 작성하고 싶을 때 고려할 수 있는 방식들을 설명하시오.
+
+   
 
    멀티 쓰레딩: 여러개의 스레드가 동시에 진행된다. 하나의 프로세스 내에 여러개의 스레드가 존재하고, 스레드들 간의 자원은 공유하지만 독립적으로 실행되는 구조이다. 
 
@@ -111,7 +117,7 @@ UIApplicationMain 함수에서는 앱의 주요 객체 생성, UI 로딩, 앱의
 
    
 
-
+------
 
 1번 질문 참고
 
