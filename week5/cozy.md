@@ -42,8 +42,14 @@
    
 
 ```swift
-public func UIApplicationMain(_ argc: Int32,_ argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>>!,_ principalClassName: String?,_ delegateClassName: String?) -> Int32
+public func UIApplicationMain(
+  _ argc: Int32,
+  _ argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>>!,
+  _ principalClassName: String?,
+  _ delegateClassName: String?) -> Int32
 ```
+
+
 
 `argc`(argv의 갯수) ,`argv`(argument의 변수 목록): main 함수로 받는 것으로 쉘에서 프로그램을 실행할 때 프로그램 실행 명령어와 함께 인자로 들어오는 값을 넣어준다.
 
