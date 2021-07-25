@@ -75,7 +75,7 @@ Int32(정수 값)이 반환된다고 설명에는 명시되어 있지만 사실 
 
 ## UIApplication
 
-모든 iOS 앱은 정확히 하나의 UIApplication 인스턴스(매우 드물게 UIApplication을 상속 받는 하위 클래스의 인스턴스)를 가지고 있삽니다. 앱이 실행되면, 시스템은 `UIApplicationMain(_ :_ :_ :_ :)` 메서드를 호출합니다. 해당 메서드는 위에서 설명한대로 여러가지 작업을 하고 그 중에서도 해당 메서드는 **싱글턴 `UIApplication` 객체를 생성합니다.**
+모든 iOS 앱은 정확히 하나의 UIApplication 인스턴스(매우 드물게 UIApplication을 상속 받는 하위 클래스의 인스턴스)를 가지고 있습니다. 앱이 실행되면, 시스템은 `UIApplicationMain(_ :_ :_ :_ :)` 메서드를 호출합니다. 해당 메서드는 위에서 설명한대로 여러가지 작업을 하고 그 중에서도 해당 메서드는 **싱글턴 `UIApplication` 객체를 생성합니다.**
 
 
 
