@@ -215,3 +215,91 @@ Core Data는 데이터 모델의 버전을 관리하고, 앱을 개발할 때마
 
 ### Swift Standard Library의 map, filter, reduce, compactMap, flatMap에 대하여 설명하시오.
 
+고차함수 : 함수를 param으로 받아 함수를 리턴하는 함수. 함수를 변수에 대입 가능한 것이 특징.
+
+##### Map (맵핑)
+
+```swift
+let numbers = [1, 2, 3, 4]
+
+let mapTarget = numbers.map { number in
+    return number + 1
+}
+
+print(mapTarget) // [2, 3, 4, 5]
+```
+
+
+
+##### filter (추출)
+
+컨테이너 내부의 값을 걸러 새로운 컨테이너 값으로 추출한다.
+
+`map`과 차이가 있다면, `map`은 기존의 data를 변형하여 새로운 컨테이너에 담아 반환하지만, `filter`는 기존의 data를 그대로 가져서 변환을 한다. 
+
+```swift
+let numbers = [1, 2, 3, 4]
+
+let filterTarget = numbers.filter { number in
+    return number % 2 == 0
+}
+
+print(filterTarget) // [2, 4]
+
+```
+
+
+
+##### reduce (결합, 차원을 줄여주는 것)
+
+`reduce`는 사용할 때 초기값을 주어야 함. 컨테이너 내부의 콘텐츠를 하나로 통합한다. 
+
+```swift
+let numbers = [0, 1, 2, 3, 4]
+let reduceTarget = numbers.reduce(0, { (first: Int, second: Int) -> Int in
+    return first + second
+})
+print(reduceTarget) //10
+```
+
+
+
+##### compactMap
+
+기존 `map`과는 달리 `nil`이 제거된 결과를 확인할 수 있다. 
+
+```
+let numbers: [Int?] = [0, 1, 2, nil, 4]
+let compactMapTarget = numbers.compactMap { number in
+    return number
+}
+print(compactMapTarget) // [0, 1, 2, 4]
+```
+
+
+
+##### flatMap
+
+기존 `map`, `compactMap`보다 더 추가된 기능인 
+
+다차원 배열을 1차원 배열로 평평하게 만들어 주고, nil 제거, 옵셔널 바인딩 까지의 역할을 수행한다. 
+
+```swift
+// for compactMap
+let numbers: [[Int?]] = [[0, 1, 2, nil, 4], [5, 6, 7, nil, 8]]
+
+var compactMapTarget: [[Int]] = []
+for number in numbers {
+    compactMapTarget.append(number.compactMap{ n in
+        return n
+    })
+}
+print(compactMapTarget) // [[0, 1, 2, 4], [5, 6, 7, 8]]
+
+// for flatMap
+let numbers: [[Int?]] = [[0, 1, 2, nil, 4], [5, 6, 7, nil, 8]]
+let flatMapTarget = numbers.flatMap{ $0 }.compactMap{ $0 }
+print(flatMapTarget) // [0, 1, 2, 4, 5, 6, 7, 8]
+
+```
+
