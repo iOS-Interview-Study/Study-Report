@@ -160,14 +160,16 @@ CloudKit을 사용하여 여러 장치에 데이터를 동기화한다.
 
 
 ##### Persistence
+<img width="274" alt="persistant" src="https://user-images.githubusercontent.com/29880961/127758842-a9851bcf-db41-4ff1-b8d5-e1bf4c1bfe52.png">
 
 Core Data는 개체를 저장소에 매핑하는 세부 정보를 추상화하여 데이터베이스를 직접 관리하지 않고도 쉽게 저장할 수 있도록 한다. 
 
-![스크린샷 2021-08-01 오후 12.40.45](/Users/jieunkim/Desktop/persistant.png)
+
 
 ##### Undo and Redo of Individual or Batched Changes
 
-![스크린샷 2021-08-01 오후 12.42.20](/Users/jieunkim/Library/Application Support/typora-user-images/스크린샷 2021-08-01 오후 12.42.20.png)
+<img width="538" alt="스크린샷 2021-08-01 오후 12 42 50" src="https://user-images.githubusercontent.com/29880961/127758847-ef5197a9-f2ec-4e97-b6e9-0f7214521347.png">
+
 
 Core Data의 실행 취소 관리자는 변경 사항을 추적하고 개별 or 그룹 or 한 번에 모두 롤백할 수 있으므로 앱에 실행 취소 및 다시 실행 지원을 쉽게 추가할 수 있다. 
 
@@ -175,7 +177,8 @@ Core Data의 실행 취소 관리자는 변경 사항을 추적하고 개별 or 
 
 ##### Background Data Tasks
 
-<img src="/Users/jieunkim/Library/Application Support/typora-user-images/스크린샷 2021-08-01 오후 12.44.00.png" alt="스크린샷 2021-08-01 오후 12.44.00" style="zoom:50%;" />
+<img width="312" alt="스크린샷 2021-08-01 오후 12 44 10" src="https://user-images.githubusercontent.com/29880961/127758850-c52801e0-6333-4d68-9bbc-0127a9d83b64.png">
+
 
 백그라운드에서 JSON을 개체로 구문 분석하는 것과 같은 잠재적인 UI 차단 데이터 작업을 수행한다. 그 후 결과를 캐시하거나 저장하여 네트워크 통신을 줄일 수 있다. 
 
