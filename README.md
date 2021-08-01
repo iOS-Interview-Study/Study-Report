@@ -63,8 +63,8 @@
 
 | 주차 | 질문                                                    | 발표자 |
 |------|-----------------------------------------------------------|--------|
-| 6    |   scene delegate에 대해 설명하시오.   |       |
-| 6    |   앱의 콘텐츠나 데이터 자체를 저장/보관하는 특별한 객체를 무엇이라고 하는가?  |    |
-| 6    | Delegate 패턴을 활용하는 경우를 예를 들어 설명하시오. |    |
-| 6    |  Swift Standard Library의 map, filter, reduce, compactMap, flatMap에 대하여 설명하시오.  |    |
+| 6    |   scene delegate에 대해 설명하시오.   | 스티븐 |
+| 6    |   앱의 콘텐츠나 데이터 자체를 저장/보관하는 특별한 객체를 무엇이라고 하는가?  | 라이언 |
+| 6    | Delegate 패턴을 활용하는 경우를 예를 들어 설명하시오. |  페즈 |
+| 6    |  Swift Standard Library의 map, filter, reduce, compactMap, flatMap에 대하여 설명하시오.  | 코지 |
 
