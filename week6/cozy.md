@@ -204,25 +204,14 @@ Core Data는 데이터 모델의 버전을 관리하고, 앱을 개발할 때마
 
 기능을 처리할 객체를 delegate로 설정하고, 특정 이벤트가 발생할 때 이를 delegate에 의해 위임되어져있는 본래의 객체로 전달해주는 것이다. 프로토콜을 사용하기 때문에 재사용할 수 있는 코드 작성이 가능하다.
 
-`TableView`의 delegate 를 채택하면 어떤 이벤트에 대한 코드를 부여하면 동작하도록 하는 프로토콜이다. 기본 값이 Optional 으로 되어있기 때문에 함수의 내부를 채워넣거나 적절한 값을 return 해주기만 하면 작동한다.
+`TableView`의 delegate 를 채택하면 어떤 이벤트에 대한 코드를 부여하면 동작하도록 하는 프로토콜이다. 
+기본 값이 Optional 으로 되어있기 때문에 기본적으로 동작이 되지만, 필요한 경우 함수의 내부를 채워넣거나 적절한 값을 return 해주면 작동한다.
 
-
-
-
-
-
-
-
-
+<img width="927" alt="스크린샷 2021-08-01 오후 6 06 57" src="https://user-images.githubusercontent.com/29880961/127765889-1db2f3c0-bb58-4b8a-ae58-afaaf9e886cd.png">
 
 
 ------
 
 
-
-<<<<<<< HEAD
 ### Swift Standard Library의 map, filter, reduce, compactMap, flatMap에 대하여 설명하시오.
 
-=======
-#### Swift Standard Library의 map, filter, reduce, compactMap, flatMap에 대하여 설명하시오.
->>>>>>> 6f509c55f41f83e06911b6734361a62a786ca5a8
