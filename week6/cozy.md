@@ -217,7 +217,7 @@ Core Data는 데이터 모델의 버전을 관리하고, 앱을 개발할 때마
 
 고차함수 : 함수를 param으로 받아 함수를 리턴하는 함수. 함수를 변수에 대입 가능한 것이 특징.
 
-##### Map (맵핑)
+#### Map (맵핑)
 
 ```swift
 let numbers = [1, 2, 3, 4]
@@ -231,7 +231,7 @@ print(mapTarget) // [2, 3, 4, 5]
 
 
 
-##### filter (추출)
+#### filter (추출)
 
 컨테이너 내부의 값을 걸러 새로운 컨테이너 값으로 추출한다.
 
@@ -250,7 +250,7 @@ print(filterTarget) // [2, 4]
 
 
 
-##### reduce (결합, 차원을 줄여주는 것)
+#### reduce (결합, 차원을 줄여주는 것)
 
 `reduce`는 사용할 때 초기값을 주어야 함. 컨테이너 내부의 콘텐츠를 하나로 통합한다. 
 
@@ -264,7 +264,7 @@ print(reduceTarget) //10
 
 
 
-##### compactMap
+#### compactMap
 
 기존 `map`과는 달리 `nil`이 제거된 결과를 확인할 수 있다. 
 
@@ -278,7 +278,7 @@ print(compactMapTarget) // [0, 1, 2, 4]
 
 
 
-##### flatMap
+#### flatMap
 
 기존 `map`, `compactMap`보다 더 추가된 기능인 
 
