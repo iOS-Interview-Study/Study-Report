@@ -15,6 +15,7 @@ func tableView(_ tableView: UITableView,
                cellForRowAt indexPath: IndexPath) -> UITableViewCell
 ```
 먼저, 첫 번째 메서드는 테이블뷰가 보여줄 섹션의 개수를 알려주는 것입니다. 알기 쉽게 반환값이 `Int` 타입으로 표현되어 있죠. 섹션 (Section)은 아래 그림과 같이 여러 행(Row)을 가질 수 있는 대상이고, Row는 섹션에 포함된 하나의 셀을 의미합니다. 섹션은 자신의 시작과 끝을 구분해주는 섹션 헤더(Header)와 푸터(Footer)를 가질 수 있습니다.
+
 ![](https://images.velog.io/images/ryan-son/post/1570bfcc-ab64-4117-93be-8fa3dcdf0482/image.png)
 
 다음으로 아래 메서드는 각 행에 나타날 셀들에 들어갈 내용들을 입력해주는 메서드입니다. 반환 타입은 예상하시듯 `UITableViewCell`입니다. 이 메서드를 통해 각 셀이 TableView 내에서의 위치(`indexPath`)에 있을 때 가져야 할 내용을 입력해줄 수 있습니다 (`tableView.dequeueReuseableCell(withIdentifier:for:)`). [Apple 공식 문서](https://developer.apple.com/documentation/uikit/uitableview/1614878-dequeuereusablecell)에 따르면 괄호 안의 메서드는 반드시 `tableView(_:cellForRowAt:)` 메서드 내부에서 호출하여 사용하여야 합니다. 이렇게 보여질 내용들을 모두 구현하고 어떤 셀을 재사용할 것인지 `func register(AnyClass?, forCellReuseIdentifier: String)`과 같은 메서드를 사용해 등록해주면 비로소 TableView의 로드가 가능합니다.

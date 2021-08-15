@@ -2,8 +2,11 @@
 `UIApplication` 객체는 아래 `UIApplication` 문서에서 다루고 있듯 모든 앱에 유일하게 하나만 존재하는 `UIApplication`의 `shared` 싱글턴 인스턴스를 의미합니다. 
 
 `UIApplication` 클래스의 타입 프로퍼티로 정의된 `shared` 인스턴스는 앱을 구성하는 모든 위치에서 접근이 가능하지만 `shared` 인스턴스를 컨트롤하기 위한 목적으로 호출하는 경우는 매우 드물 것입니다. 하지만 이 유일한 `UIApplication` 객체를 부담 없이 가지고 작업할 수 있는 공간이 있는데요. 바로 `AppDelegate` 타입입니다.
+
 ![](https://images.velog.io/images/ryan-son/post/e968e35f-008b-4d40-af77-bce1b222391f/image.png)
+
 `AppDelegate` 객체는 앱의 실행 시점에서 `UIApplicationMain(_:_:_:_:)` 메서드를 통해 `UIApplication` 객체와 함께 생성되는 객체로 생성되는 시점에 아래 그림에 나타난 `UIApplication.shared`의 `delegate`로 설정됩니다.
+
 ![](https://images.velog.io/images/ryan-son/post/0ae8ccce-2cf4-4784-b3bd-34c6bb812c34/image.png)
 
 ![](https://images.velog.io/images/ryan-son/post/261de85b-392b-4af7-b0d4-bf71722a9e9d/image.png)
