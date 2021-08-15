@@ -2,7 +2,7 @@
 
 ## TableView 동작 방식
 ### 요약
-1. `UITableView`는 딜리게이트인 `UITableViewDataSource`에게 섹션 개수와 셀에 적용될 데이터를 재사용 큐에 있는 `UITableViewCell`에 적용하라는 임무를 줍니다. (이 때 재사용 큐에서 셀을 꺼내주는 주체는 `UITableView`입니다.(`tableView.dequeueReusableCell(withIdentifier:for:)`)
+1. `UITableView`는 딜리게이트인 `UITableViewDataSource`에게 섹션 개수와 셀에 적용될 데이터를 재사용 큐에 있는 `UITableViewCell`에 적용하라는 임무를 줍니다. (이 때 재사용 큐에서 셀을 꺼내주는 주체는 `UITableView`입니다.(`tableView.dequeueReusableCell(withIdentifier:for:)`) - [동작 트리거는 `UITableViewDataSource` 객체]
 2.  TableView가 처음 로드되는 상황과 같이 재사용 큐에 재사용할 수 있는 셀이 없는 경우에는 1에서 언급한 메서드가 셀을 만들고, 그렇지 않은 경우에는 재사용 큐에서 꺼내어 사용합니다.
 3. `UITableView`는 `UITableViewDataSource`와 같이 또 한 명의 동업자로 `UITableViewDelegate`입니다. 이 딜리게이트는 주로 셀 선택, swipe 액션 등 사용자의 입력에 응답하거나 셀, 섹션 헤더와 푸터의 높이를 계산하는 등의 일을 수행합니다. 하지만 TableView를 로드하는데에는 필수적인 요소가 아니므로 `UITableViewDataSource`처럼 테이블 뷰를 나타내기 위해 반드시 채택하여야 하거나 구현해야하는 메서드는 없습니다.
 
