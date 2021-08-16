@@ -22,6 +22,8 @@ open class UIApplication : UIResponder {
 
 application 객체의 주요 역할은, 들어오는 사용자 이벤트의 초기 라우팅을 처리하는 것입니다. 컨트롤 객체(UIControl의 인스턴스)가 적절한 target 객체에 전달한 action 메세지를 전달합니다. application 객체는 열린 window(UIWindow의 객체)의 목록을 유지관리하며, 이를 통해 앱의 UIView객체를 검색할 수 있습니다.
 
+
+
 <br>
 
 #### UIApplicationMain
