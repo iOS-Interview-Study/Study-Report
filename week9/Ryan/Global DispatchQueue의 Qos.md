@@ -31,9 +31,9 @@ Global queue들은 main queue와 달리 concurrent하여 하나 이상의 스레
 가장 낮은 우선 순위를 가지는 작업입니다. 백그라운드에서 작업이 수행될 때 여기에 할당할 수 있습니다. 사용자와의 상호작용을 필요로하지 않고 수행 시간에 민감하지 않으며, prefetching, database maintenenace, 원격 서비스 또는 백업과 동기화하기와 같은 네트워킹 작업을 일부 포함할 수 있습니다. 시스템은 에너지를 효율적으로 사용하는 것을 목표로 작업을 수행합니다.
 
 ### `unspecified`
-Quality-of-Service 클래스가 없는 경우를 나타냅니다.
-
+Quality-of-Service 정보가 없음을 나타냅니다. 시스템에게 QoS를 추론해야 한다는 단서를 제공합니다. Thread가 legacy API를 사용하는 경우 QoS 중에 선택하여 사용할 수 있습니다.
 
 # 참고자료
-- [DispatchQoS](https://developer.apple.com/documentation/dispatch/dispatchqos) - Apple Developer
+- [DispatchQoS](https://developer.apple.com/documentation/dispatch/dispatchqos) - Apple Developer - 
+- [Prioritize Work with Quality of Service Classes](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39-SW1) - Energy Effieiency Guide for iOS Apps
 - [[Swift] Dispatch Queues](https://velog.io/@ryan-son/Swift-Dispatch-Queues) - Ryan Velog
