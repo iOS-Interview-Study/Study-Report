@@ -76,8 +76,11 @@ KoreaUniversityClass *koreaUniversity = [university retain];
 koreaUniversity = nil
 // university retain count == 2
 
+```
+
+```objc
+
 [koreaUniversity release];
-koreaUniversity = nil
 // university retain count == 1
 ```
 
