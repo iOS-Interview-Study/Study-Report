@@ -16,14 +16,12 @@
   var bounds: CGRect { get set }
   ```
 
-  
-
-  <img src="/Users/jieunkim/Desktop/스크린샷 2021-08-30 오전 11.21.47.png" alt="스크린샷 2021-08-30 오전 11.21.47" style="zoom:50%;" />
+<img width="797" alt="스크린샷 2021-08-30 오전 11 21 47" src="https://user-images.githubusercontent.com/29880961/131293416-1ad1e3de-22aa-4824-9dd2-3b72a393c786.png">
 
 
 
-<img src="/Users/jieunkim/Desktop/스크린샷 2021-08-30 오전 11.21.55.png" alt="스크린샷 2021-08-30 오전 11.21.55" style="zoom:50%;" />
 
+<img width="608" alt="스크린샷 2021-08-30 오전 11 21 55" src="https://user-images.githubusercontent.com/29880961/131293431-dad6f206-7ecf-4db9-8128-bf4d795659b0.png">
 
 
 frame은 주로 view의 위치나 크기를 설정할 때 사용하고, bounds는 view 내부에 그림을 그리거나 변형한 후에 view의 크기를 알고 싶을 때나 하위 view를 정렬하는 것과 같이 내부적으로 변경하는 경우에 사용한다.
