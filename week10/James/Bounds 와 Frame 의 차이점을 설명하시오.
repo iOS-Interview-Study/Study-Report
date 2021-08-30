@@ -1,0 +1,161 @@
+# Bounds 와 Frame 의 차이점을 설명하시오.
+
+---
+
+[iOS) Frame vs Bounds 제대로 이해하기 (1/3)](https://babbab2.tistory.com/44), [iOS) Frame vs Bounds 제대로 이해하기 (2/3](https://babbab2.tistory.com/45?category=831129), [iOS) Frame vs Bounds 제대로 이해하기 (3/3)](https://babbab2.tistory.com/46?category=831129) 을 많이 참고하여 작성한 글입니다. 올려주신 사진도 몇 개 첨부 했습니다. 정말 정리를 잘 해 놓으셨다구요. 존경합니다 소들이님😍
+
+
+
+## Frame
+
+> The frame rectangle, which describes the view's location and size in its superview's coordinate system
+
+**SuperView의 좌표계에서 View의 위치와 크기를 나타낸다.**
+
+## bounds
+
+> The bounds rectancle, which describes the view's location and size in its own coordinate system
+
+**자신의 좌표계에서 View의 위치와 크기를 나타낸다.**
+
+
+
+## origin
+
+**View의 원위치(x, y 좌표)**
+
+view의 좌상단이 기본적인 view의 원위치가 됩니다.
+
+
+
+### frame의 origin
+
+**View의 위치가 SuperView의 원점으로부터 얼만큼 떨어져있는지를 나타냄**
+
+![img](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828143317.png)
+
+### bounds의 origin
+
+**자신의 좌표계 기준으로 View 자기 자신의 원위치**
+
+따라서 각 view bounds의 origin은 (0, 0) 으로 초기화 됩니다.
+
+![img](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828144020.png)
+
+
+
+## Size
+
+
+
+### frame의 size
+
+View 영역을 **모두 감싸는** 사각형 size
+
+![img](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828145814.png)
+
+view를 회전 시키면 frame의 size는 위와 같이 변하게 됩니다. View가 차지하는 영역이 위와같이 변하기 때문이죠.
+
+따라서 `frame.origin` 값도 같이 변하게 됩니다.
+
+### bounds의 size
+
+View 영역 **자체의** size
+
+![img](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828145752.png)
+
+bounds의 사이즈는 view 영역 자체 사이즈를 뜻하기 때문에 View를 돌려도 `width` 와 `height` 가 변하지 않습니다.
+
+그리고 중요한 점은 view를 이렇게 돌려도 view의 `bounds.origin` 값은 변하지 않습니다.
+
+## 차이점 간단 요약
+
+|                          | frame                                                        | Bounds                                                       |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 정의                     | SuperView의 좌표계에서 View의 위치와 크기                    | 자신의 좌표계에서 View의 위치와 크기                         |
+| origin(x, y) 기준 점     | SuperView의 좌표계에서 view의 원위치[좌상단 (x,y)]  View를 회전시키면 origin 값이 바뀌게됨 | 자신의 좌표계에서 view의 원위치[좌상단 (x,y)] View를 회전시키면 origin 값이 바뀌지 않습니다. |
+| Size(width, height) 기준 | View 영역을 모두 감싸는 사각형                               | View 영역 자체                                               |
+
+
+
+## 그럼 frame은 언제 사용하나?
+
+
+
+### View의 위치와 크기를 지정할 때 사용합니다.
+
+코드로 Superview의 좌표계에서 프로그래머가 원하는 View의 위치, 크기를 정의할 수 있고 이때 frame을 활용해서 View를 그리면 됩니다.
+
+
+
+## bounds는 언제 사용하나?
+
+### 1. 디바이스의 사이즈를 알아야 할 때
+
+![img](https://blog.kakaocdn.net/dn/cih2ee/btq2hepqhVM/1DvQNe1LWgviPl4Ggnykk1/img.png)
+
+아이폰은 종류별로 다른 화면 사이즈를 갖고 있습니다.
+
+이 모든 해상도에 대응하기 위해서 `bounds` 를 사용할 수 있습니다.
+
+`UIScreen.main.bounds.size.width` 를 활용해서 각 디바이스 별 전체 폭 길이를 알 수 있습니다.
+
+`UIScreen.main.bounds.size.height` 를 활용해서 디바이스 별 전체 높이 길이를 알 수 있습니다.
+
+
+
+### 2. View를 회전 한 후 View의 실제 크기를 알고 싶을 때
+
+![img](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828165102.png)
+
+소들이님 짱!🤩
+
+
+
+### 3. View 내부에 그림 그릴 때(drawRect)
+
+자기 자신의 좌표계를 기준으로 그림을 그려야 하기 때문에 이때 `bounds`를 활용해 볼 수 있습니다.
+
+
+
+### 4. ScrollView에서 스크롤을 할 때 사용합니다.
+
+#### ScrollView.bounds & contentView
+
+iOS에서는 모든 뷰들은 보여지는 부분을 `view.bounds` 로 표현합니다. `UIScrollView` 클래스는 view 뿐 아니라 `contentView` 라는 유니크한 프로퍼티를 갖고 있습니다.
+
+그래서 스크롤 뷰에서는
+
+- 보여지는 면적은 `scollView.bounds` 이고
+
+- 전체 면적은 `contentView` 라고 하고 이 뷰의 사이즈를 `scrollView.contentSize` 라고 합니다.
+
+
+
+![Simulator Screen Recording - iPod touch (7th generation) - 2021-08-28 at 16.58.23](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828165945.gif)
+
+여기에 3 개의 사진이 있는 것 같지만 사실은 3개의 사진이 포함되어있는 scrollView의 하나의 큰 `contentView` 의 일부분을 보는 것 입니다.
+
+
+
+여기서 스크롤 하는 동작이 바로 
+
+**scrollView의 bounds 위치를 바꿔주는 것 입니다.**
+
+주황색 선: scrollView의 contentView를 대략 표현한 것!
+
+![Screen Shot 2021-08-28 at 5.13.45 PM](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828171355.png)
+
+![Screen Shot 2021-08-28 at 5.14.12 PM](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828171419.png)
+
+![Screen Shot 2021-08-28 at 5.14.45 PM](https://raw.githubusercontent.com/inwoodev/uploadedImages/uploadedFiles/20210828171450.png)
+
+스크롤 시 scrollView.bounds.origin 또는 contentOffset 값이 변하는 것을 확인할 수 있습니다.
+
+
+
+
+
+[참고]:
+
+[Aug 25, 2021, TIL (Today I Learned) - 이미지 전환과 UIPageControl 그리고 데이터 전달 - inwoodev](https://velog.io/@inwoodev/Aug-25-2021-TIL-Today-I-Learned-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A0%84%ED%99%98%EA%B3%BC-UIPageControl)
