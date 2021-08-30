@@ -1,0 +1,30 @@
+## 정의
+
+- 특정한 작업이나 기능의 일부분에 대한 프로퍼티와 메소드들 그리고 기타 요구사항들을 보여주는 청사진
+- Class, Struct, Enum에 채택할 수 있다.
+- 프로토콜의 요구사항을 충족하면 그 타입은 "프로토콜은 준수한다" 라고 할 수 있다.
+
+### 왜 프로토콜을 사용해야 하는가?
+
+- 상속 보다 강력하다
+    - 클래스, 구조체, 열거형에서 모두 채택 가능
+    - 다중 채택 가능
+- 제너릭과 결합하면 더욱 파급적인 효과?
+
+### 의문점
+
+- 왜 Swift는 대부분 구조체로 구현을 했을까?
+- 왜 UIVIewController는 클래스 일까?
+- 왜 Value Type이 Reference Type 보다 빠를까?
+
+### 참고자료
+
+[https://docs.swift.org/swift-book/LanguageGuide/Protocols.html](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
+
+[https://xho95.github.io/swift/language/grammar/protocol/2016/03/03/Protocols.html](https://xho95.github.io/swift/language/grammar/protocol/2016/03/03/Protocols.html)
+
+[https://blog.yagom.net/531/](https://blog.yagom.net/531/)
+
+[https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/](https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/)
+
+[https://www.youtube.com/watch?v=9gkzHUsQiUc](https://www.youtube.com/watch?v=9gkzHUsQiUc)
