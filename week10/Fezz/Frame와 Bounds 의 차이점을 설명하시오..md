@@ -86,3 +86,13 @@ View가 회전하든 안하든 **자신의 원점이 곧 좌표의 시작점**�
 
 즉, 속 안에 뷰를 어떻게 보여줄 것인가 이다.
 
+<br>
+
+## 참고 
+
+[소들이 - iOS) Frame vs Bounds 제대로 이해하기](https://babbab2.tistory.com/44?category=831129)
+
+[Apple - Frame](https://developer.apple.com/documentation/uikit/uiview/1622621-frame)
+
+[Apple - Bounds](https://developer.apple.com/documentation/uikit/uiview/1622580-bounds)
+

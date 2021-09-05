@@ -63,4 +63,5 @@ struct MarketNetwork: OpenMarketNetwork {
 }
 ```
 
-![구조체](/Users/Fezz/Downloads/구조체.jpg)
+![구조체](https://raw.githubusercontent.com/Fezravien/UploadForMarkdown/forUpload/img/%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9%E1%84%8E%E1%85%A6.jpg)
+
