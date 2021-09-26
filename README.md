@@ -116,3 +116,6 @@
 | 13    | nib과 xib의 차이점. | 스티븐|
 | 13    | multipart/form data를 써야하는 이유. |라이언|
 | 13    | Safearea에 대해서 설명하시오.  | 제임스 |
+
+### 14주차
+https://developer.apple.com/videos/play/wwdc2018/415
